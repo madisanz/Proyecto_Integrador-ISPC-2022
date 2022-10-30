@@ -21,10 +21,16 @@ Exposición grupal y explicación del software creado por parte del equipo de tr
 
 Miembros del equipo de desarrollo: 
 
-Carla Argentina Wayar
-Rojas Jorge Daniel
-Margarita Sanchez
-Lucia Anahi Roldan
-Emma Vilma Gutieerez
-Eric Samuel Barrionuevo
-Eric Garrido
+*Carla Argentina Wayar
+
+*Rojas Jorge Daniel
+
+*Margarita Sanchez
+
+*Lucia Anahi Roldan
+
+*Emma Vilma Gutieerez
+
+*Eric Samuel Barrionuevo
+
+*Eric Garrido
