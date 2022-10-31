@@ -6,6 +6,7 @@ from rich.console import Console
 
 
 console= Console()
+#listar_albumes_por_artista()
 
 def listar_albumes_por_artista():
     con = mo.Conectar()
@@ -17,9 +18,9 @@ def listar_albumes_por_artista():
         print("\n")
     input("Presione ENTER para continuar")
 
-#listar_albumes_por_artista()
 
 
+#listar_albumes_por_genero()
 def listar_albumes_por_genero():
     con = mo.Conectar()
     listado = con.consulta_albumes_por_genero()
@@ -32,9 +33,9 @@ def listar_albumes_por_genero():
     input("Presiones ENTER para continuar")
 
 
-#listar_albumes_por_genero()
 
 
+#ingresar_interprete()
 def ingresar_interprete():
     con = mo.Conectar()
     console.print("Estos son los interpretes que ya existen: ","\n", style=("bold red"))
@@ -65,8 +66,8 @@ def ingresar_interprete():
     console.print(f"El interprete '{nombre}, {apellido}' fue ingresado correctamente.", style=("bold green"))
     input("Presione ENTER para continuar")
 
-#ingresar_interprete()
 
+#buscar_por_album()
 def buscar_por_album():
     con = mo.Conectar()
     console.print("Ingrese el nombre del album que desea buscar:",style=("bold blue"))
@@ -76,8 +77,8 @@ def buscar_por_album():
     con.conexion.close()
     input("Presiones ENTER para continuar")
 
-#buscar_por_album()
 
+#agregar_album()
 def agregar_album():
     con = mo.Conectar()
     console.print("Ingrese el codigo del nuevo album:",style=("bold blue"))
@@ -134,8 +135,8 @@ def agregar_album():
     con.insertar_album(nuevoAlbum)
     input("Presione ENTER para continuar")
 
-#agregar_album()
 
+#baja_album()
 def baja_album():
     con = mo.Conectar()
     console.print("Albumes disponibles:", style=("bold red"))
@@ -151,8 +152,8 @@ def baja_album():
     con.eliminar_album(album)
     input("Presione ENTER para continuar")
 
-#baja_album()
 
+# modificar_nombre_album()
 def modificar_nombre_album():
     con = mo.Conectar()
     console.print("Albumes disponibles:", style=("bold red"))
@@ -172,7 +173,8 @@ def modificar_nombre_album():
     con.modificar_album_nombre(nombre, cod_album)
     input("Presione ENTER para continuar")
 
-# modificar_nombre_album()
+
+#modificar_precio_album()
 
 def modificar_precio_album():
     con = mo.Conectar()
@@ -194,8 +196,7 @@ def modificar_precio_album():
     con.modificar_album_precio(precio, cod_album)
     input("Presione ENTER para continuar")
 
-#modificar_precio_album()
-
+#modificar_stock_album()
 def modificar_stock_album():
     con = mo.Conectar()
     console.print("Albumes disponibles:",style=("bold red"))
@@ -216,4 +217,4 @@ def modificar_stock_album():
     con.modificar_album_cantidad(cantidad, cod_album)
     input("Presione ENTER para continuar")
 
-#modificar_stock_album()
+
