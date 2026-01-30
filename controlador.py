@@ -2,9 +2,6 @@ import modelo as mo
 from rich import print
 from rich.console import Console
 
-
-
-
 console= Console()
 #listar_albumes_por_artista()
 
@@ -17,8 +14,6 @@ def listar_albumes_por_artista():
         console.print(" ","Nombre del album:",album[1], style=("bold green"))
         print("\n")
     input("Presione ENTER para continuar")
-
-
 
 #listar_albumes_por_genero()
 def listar_albumes_por_genero():
